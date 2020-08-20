@@ -1,3 +1,7 @@
+/*
+error occurs in leetcode with vectors
+so i have done in array
+*/
 #include <bits/stdc++.h>
 using namespace std;
 void rot(int a[], int n)
