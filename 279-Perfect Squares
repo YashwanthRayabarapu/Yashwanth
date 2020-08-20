@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int numSquares(int n) {
+        
+        int s = sqrt(n);
+        if(s * s == n) 
+        {
+            return 1;
+        }
+         while ((n & 3) == 0)
+            {
+            n >>= 2;  
+            }
+        if ((n & 7) == 7)
+            {
+                return 4;
+            }
+         if(n < 4) 
+         {
+             return n;
+         }
+
+        for(int i = 1; i<= s; i++) {
+            int r = n - i*i;
+            s= sqrt(r);
+            if(s* s == r) return 2;
+        }
+        return 3;
+    }
+};
