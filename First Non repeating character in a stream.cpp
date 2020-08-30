@@ -8,11 +8,7 @@ void repeat(char str[])
 	int counts[MAX_CHAR] = { 0 };
 	for (int i = 0; str[i]; i++) {
 		q.push(str[i]);
-
-		// increment the frequency count
 		counts[str[i] - 'a']++;
-
-		// check for the non pepeating character
 		while (!q.empty()) {
 			if (counts[q.front() - 'a'] > 1)
 				q.pop();
