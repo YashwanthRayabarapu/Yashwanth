@@ -1,4 +1,3 @@
-//minimum no of swaps to bring < or = k;
 #include<bits/stdc++.h>
 using namespace std;
 
